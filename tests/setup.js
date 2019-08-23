@@ -4,5 +4,5 @@ const keys = require('../config/keys');
 
 
 mongoose.Promise = global.Promise;
-
+console.log("DB", keys.mongoURI);
 mongoose.connect(keys.mongoURI, {useMongoClient: true});
